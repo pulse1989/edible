@@ -6,5 +6,4 @@ package za.co.kernelpanic.edible.data.mapper
 interface Mapper<R, C> {
 
     fun mapToCache(remote: R):C
-    fun mapToRemote(cache: C): R
 }

@@ -5,7 +5,7 @@ import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import kotlinx.coroutines.flow.Flow
-import za.co.kernelpanic.edible.data.cache.CachedRestaurantProfile
+import za.co.kernelpanic.edible.data.model.cache.CachedRestaurantProfile
 
 @Dao
 interface RestaurantInfoDao {

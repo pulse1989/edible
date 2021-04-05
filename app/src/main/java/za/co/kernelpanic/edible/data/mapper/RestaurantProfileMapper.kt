@@ -1,15 +1,22 @@
 package za.co.kernelpanic.edible.data.mapper
 
-import za.co.kernelpanic.edible.data.cache.CachedRestaurantProfile
-import za.co.kernelpanic.edible.data.remote.Restaurants
+import za.co.kernelpanic.edible.data.model.cache.CachedRestaurantProfile
+import za.co.kernelpanic.edible.data.model.remote.Restaurants
 
-class RestaurantProfileMapper : Mapper<Restaurants, CachedRestaurantProfile> {
+object RestaurantProfileMapper : Mapper<Restaurants, CachedRestaurantProfile> {
+
     override fun mapToCache(remote: Restaurants): CachedRestaurantProfile {
-        TODO("Not yet implemented")
+        return CachedRestaurantProfile(
+                name = remote.name,
+                status = remote.status,
+                bestMatch = remote.sortingValues.bestMatch,
+                newest = remote.sortingValues.newest,
+                ratingAverage = remote.sortingValues.ratingAverage,
+                distance = remote.sortingValues.distance,
+                popularity = remote.sortingValues.popularity,
+                averageProductPrice = remote.sortingValues.averageProductPrice,
+                deliveryCost = remote.sortingValues.deliveryCosts,
+                minCost = remote.sortingValues.minCost
+        )
     }
-
-    override fun mapToRemote(cache: CachedRestaurantProfile): Restaurants {
-        TODO("Not yet implemented")
-    }
-
 }

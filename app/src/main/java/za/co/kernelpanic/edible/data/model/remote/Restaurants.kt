@@ -1,4 +1,4 @@
-package za.co.kernelpanic.edible.data.remote
+package za.co.kernelpanic.edible.data.model.remote
 
 data class Restaurants(
     val name: String,

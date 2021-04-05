@@ -24,7 +24,7 @@ object AppModule {
     fun providesAppDatabase(@ApplicationContext appContext: Context): EdibleDatabase {
         return Room.databaseBuilder(
             appContext,
-            EdibleDatabase::class.java, "edible.db"
+            EdibleDatabase::class.java, "edible_eats.db"
         ).build()
     }
 
@@ -39,7 +39,7 @@ object AppModule {
         val masterKey = MasterKey.Builder(context.applicationContext)
             .setKeyScheme(MasterKey.KeyScheme.AES256_GCM)
             .build()
-        val sharedPrefsFile = "ediblePref"
+        val sharedPrefsFile = "ediblePrefs"
 
         return EncryptedSharedPreferences.create(
             context,
