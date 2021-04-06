@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardViewRestaurants"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/margin_medium"
+    android:layout_marginTop="@dimen/margin_medium"
+    android:layout_marginEnd="@dimen/margin_medium"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="6dp"
+    app:rippleColor="@color/design_default_color_secondary">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayoutParent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/restaurantImageView"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/takeoutImageHeight"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/restaurantNameTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/ubuntu_medium"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/restaurantImageView"
+            tools:text="@string/text_tools_restaurant_name" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/deliveryIndicatorImageView"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/restaurantNameTextView"
+            app:srcCompat="@drawable/ic_delivery_bike" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/deliveryFeeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintStart_toEndOf="@+id/deliveryIndicatorImageView"
+            app:layout_constraintTop_toBottomOf="@+id/restaurantNameTextView"
+            tools:text="£22.00" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/startRatingImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toEndOf="@+id/deliveryFeeTextView"
+            app:layout_constraintTop_toBottomOf="@+id/restaurantNameTextView"
+            app:srcCompat="@drawable/ic_restaurant_rating" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/starRatingTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintStart_toEndOf="@+id/startRatingImageView"
+            app:layout_constraintTop_toBottomOf="@+id/restaurantNameTextView"
+            tools:text="4.5" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/distanceIndicatorImageView"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:layout_marginTop="12dp"
+            android:paddingBottom="4dp"
+            app:layout_constraintStart_toEndOf="@+id/starRatingTextView"
+            app:layout_constraintTop_toBottomOf="@+id/restaurantNameTextView"
+            app:srcCompat="@drawable/ic_speedometer" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/distanceTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="14dp"
+            app:layout_constraintStart_toEndOf="@+id/distanceIndicatorImageView"
+            app:layout_constraintTop_toBottomOf="@+id/restaurantNameTextView"
+            tools:text="11km" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

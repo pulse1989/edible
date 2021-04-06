@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- image restaurant image view dimensions -->
+    <dimen name="takeoutImageWidth">200dp</dimen>
+    <dimen name="takeoutImageHeight">150dp</dimen>
+    
+    <!-- ui widget dimensions -->
+    <dimen name="margin_medium">20dp</dimen>
+</resources>

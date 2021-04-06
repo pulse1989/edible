@@ -6,4 +6,10 @@
     <string name="menu_favorites">Favorites</string>
     <string name="menu_account">My Account</string>
     <string name="menu_settings">Settings</string>
+
+    <!-- restaurant list strings -->
+    <string name="text_tools_restaurant_name">Nando\'s Parktown</string>
+    <string name="text_tools_restaurant_open">Open</string>
+    <string name="text_tools_delivery_cost">£10</string>
+
 </resources>

@@ -7,6 +7,7 @@ data class CachedRestaurantProfile(
         @PrimaryKey(autoGenerate = true) @ColumnInfo(name = "restaurant_id") val restaurantId: Long? = 0,
         @ColumnInfo(name = "name") val name: String? = "",
         @ColumnInfo(name = "status") val status: String? = "",
+        @ColumnInfo(name = "imageUrl") val imageUrl: String? = "",
         @ColumnInfo(name = "favourite") val isFavourite: Boolean? = false,
         @ColumnInfo(name = "best_match") val bestMatch: Double? = 0.0,
         @ColumnInfo(name = "newest") val newest: Double? = 0.0,
