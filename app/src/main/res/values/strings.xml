@@ -8,8 +8,22 @@
     <string name="menu_settings">Settings</string>
 
     <!-- restaurant list strings -->
+    <string name="text_no_restaurants_available">No restaurants could be loaded.\nPlease try again</string>
+    <string name="text_no_restaurants_found">Your restaurant could not be found. Please try again</string>
+    <string name="text_no_favourites_available">You haven\'t added any restaurants as favourites. </string>
+    <string name="text_search_for_your_restaurant">Search for your restaurant using the search bar above</string>
     <string name="text_tools_restaurant_name">Nando\'s Parktown</string>
     <string name="text_tools_restaurant_open">Open</string>
     <string name="text_tools_delivery_cost">£10</string>
+    <string name="text_hint_search_restaurant">Search Restaurant</string>
+    <string name="text_status_restaurant_open">Restaurant is open!</string>
+    <string name="text_status_restaurant_closed">Restaurant is closed</string>
+    <string name="text_status_restaurant_order_ahead">Please place your order before pickup</string>
+
+    <!-- error strings -->
+    <string name="text_error_loading_data">Unable to load data</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="menu_search">Search</string>
 
 </resources>

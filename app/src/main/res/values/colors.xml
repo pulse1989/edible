@@ -7,4 +7,9 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="grey">#c9cadb</color>
+    <color name="colorNavy">#162038</color>
+    <color name="restaurant_offline">#E32A17</color>
+    <color name="restaurant_online">#1AE510</color>
+    <color name="restaurant_order_ahead">#FFA500</color>
 </resources>

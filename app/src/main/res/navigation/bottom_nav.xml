@@ -2,14 +2,25 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main_nav"
+    android:id="@+id/bottom_nav"
     app:startDestination="@+id/homeFragment">
 
     <fragment
         android:id="@+id/homeFragment"
         android:name="za.co.kernelpanic.edible.ui.home.HomeFragment"
         android:label="@string/menu_home"
-        tools:layout="@layout/home_fragment">
-    </fragment>
+        tools:layout="@layout/home_fragment"></fragment>
+
+    <fragment
+        android:id="@+id/favouritesFragment"
+        android:name="za.co.kernelpanic.edible.ui.favourites.FavouritesFragment"
+        android:label="@string/menu_favorites"
+        tools:layout="@layout/fragment_favourites"></fragment>
+
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="za.co.kernelpanic.edible.ui.search.SearchFragment"
+        android:label="@string/menu_search"
+        tools:layout="@layout/fragment_search"></fragment>
 
 </navigation>

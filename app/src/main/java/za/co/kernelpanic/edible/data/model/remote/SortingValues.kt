@@ -1,5 +1,8 @@
 package za.co.kernelpanic.edible.data.model.remote
 
+import com.squareup.moshi.JsonClass
+
+@JsonClass(generateAdapter = true)
 data class SortingValues(
     val bestMatch: Double,
     val newest: Double,

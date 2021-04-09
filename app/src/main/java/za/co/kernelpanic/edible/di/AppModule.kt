@@ -3,7 +3,6 @@ package za.co.kernelpanic.edible.di
 import android.content.Context
 import android.content.SharedPreferences
 import androidx.room.Room
-import androidx.room.RoomDatabase
 import androidx.security.crypto.EncryptedSharedPreferences
 import androidx.security.crypto.MasterKey
 import dagger.Module
@@ -25,12 +24,19 @@ object AppModule {
         return Room.databaseBuilder(
             appContext,
             EdibleDatabase::class.java, "edible_eats.db"
-        ).build()
+        ).fallbackToDestructiveMigration()
+            .build()
     }
 
     @Provides
     fun providesRestaurantInfoDao(appDatabase: EdibleDatabase): RestaurantInfoDao {
         return appDatabase.restaurantInfoDao()
+    }
+
+    @Provides
+    @Singleton
+    fun providesCoroutineDispatcher(): DispatcherProvider {
+        return DefaultDispatcher()
     }
 
     @Provides
